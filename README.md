@@ -32,8 +32,8 @@ The technical details of the Panel Method used by shpanel and validation against
 
 First, make sure you have all the required dependencies installed:
 
-* Matlab or Octave.
-* Gnuplot (optional).
+* Matlab
+* Gnuplot (optional)
 
 Then, acquire the source code by cloning the git repository:
 
