@@ -1,8 +1,8 @@
 # SHPANEL INPUT PARAMETERS:
-1.0000	#c 
-1.0000	#v 
-0.0200	#fmax 
-0.1200	#tmax 
-0.0000	#alpha_deg 
-1000	#n 
-1000.0	#rho
+1.0000	#c: 	chord length 
+1.0000	#v: 	far-field velocity 
+0.0200	#fmax: 	maximum camber
+0.1200	#tmax: 	maximum thickness 
+0.0000	#alpha_deg: angle of attack (degrees) 
+1000	#n: 	number of panels 
+1000.0	#rho: 	fluid density

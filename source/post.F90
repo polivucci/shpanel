@@ -17,37 +17,41 @@ SUBROUTINE draw()
 INTEGER :: cou, cou1
 
 OPEN(31, FILE='output/draw_profile.dat', form='formatted', status='replace')
+WRITE(31,'(A,X,A)') '#x_profile', 'y_profile'
 DO cou=1,n+1
-WRITE(31,'(4(2X,F24.12))') x(cou), y(cou)
+WRITE(31,'(F12.6,X,F12.6)') x(cou), y(cou)
 ENDDO
- CLOSE(31)
+CLOSE(31)
 
 OPEN(34, FILE='output/draw_contrp.dat', form='formatted', status='replace')
+WRITE(34,'(A,X,A)') '#x_controlpoint', 'y_controlpoint'
 DO cou=1,n
-WRITE(34,'(4(2X,F24.12))') xcp(cou), ycp(cou)
+WRITE(34,'(F12.6,X,F12.6)') xcp(cou), ycp(cou)
 ENDDO
- CLOSE(34)
+CLOSE(34)
 
 !text output w chord
 OPEN(32, FILE='output/draw_chord.dat', form='formatted', status='replace')
+WRITE(32,'(A,X,A)') '#x_chord', 'y_chord'
 DO cou=1,lin
-WRITE(32,'(2(2X,F24.12))') xc(cou), yc(cou)
+WRITE(32,'(F12.6,X,F12.6)') xc(cou), yc(cou)
 ENDDO
- CLOSE(32)
+CLOSE(32)
 
 !text output w field quantities
 !OPEN(36, FILE='output/draw_field.dat', form='formatted', status='replace')
 OPEN(33, FILE='output/draw_field_l.dat', form='formatted', status='replace')
 OPEN(35, FILE='output/draw_field_u.dat', form='formatted', status='replace')
-
+WRITE(33,'(A,3X,A,3X,A)') '#x_chord', 'velocity/v', 'pressure_coeff'
+WRITE(35,'(A,3X,A,3X,A)') '#x_chord', 'velocity/v', 'pressure_coeff'
 DO cou=1,n
     !WRITE(36,'(4(2X,F12.5))') xcp(cou)/c, (vel(cou)/v), p(cou), Cp(cou)
     IF (cou <= n/2) THEN
     !WRITE(*,*) 'unten'
-    WRITE(33,'(4(2X,F24.12))') xcp(cou)/c, (vel(cou)/v), p(cou), Cp(cou)
+    WRITE(33,'(3(E12.6,3X))') xcp(cou)/c, (vel(cou)/v), Cp(cou)
     ELSE
     !WRITE(*,*) 'oben'
-    WRITE(35,'(4(2X,F24.12))') xcp(cou)/c, (vel(cou)/v), p(cou), Cp(cou)
+    WRITE(35,'(3(E12.6,3X))') xcp(cou)/c, (vel(cou)/v), Cp(cou)
     ENDIF
 ENDDO
 

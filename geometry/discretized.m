@@ -1,8 +1,6 @@
 clear
 clc
 
-
-
 %THICKNESS NORMAL TO CL
 IF (xs(inx) < xs(inxold)) THEN
 ja = ATAN((-ys(inx+1) + ys(inx-1))/delta2)

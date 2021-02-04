@@ -1,16 +1,16 @@
 function [y] = BSPG_xc(Npc,xp,yp,grado,Np,xc)
-% definisco i punti di controllo
+% control points are defined
 ordine = grado+1;
 
 Npuntipar = 1001;
 t = linspace(0,1,Npuntipar);
 
-% trovo i nodi
+% finding nodes
 nodi=knots(Npc,ordine);
-% trovo le basi
+% finding basis
 basi=basis(ordine,Npuntipar,t,Npc,nodi);
-% calcolo i valori
+% calculating values
 xx = basi*xp';
 yy =basi*yp';
-% interpolazione sui miei valori
+% interpolating values
 y = interp1(xx,yy,xc,'pchip');

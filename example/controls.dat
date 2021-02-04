@@ -1,8 +1,0 @@
-# SHPANEL INPUT PARAMETERS:
-1.0000	#c 
-1.0000	#v 
-0.0200	#fmax 
-0.1200	#tmax 
-0.0000	#alpha_deg 
-1000	#n 
-1000.0	#rho
