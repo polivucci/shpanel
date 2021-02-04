@@ -6,5 +6,6 @@ cd ./geometry/
 octave --no-gui Lancio_BSpline.m
 
 cd ../
+mkdir ./output/
 
 ./shpanel
