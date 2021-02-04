@@ -13,14 +13,14 @@ The technical details of the Panel Method used by shpanel and validation against
 
 ## Source Download and Compilation
 
-First, make sure you have a Fortran compiler and a copy of Matlab or Octave installed.
+First, make sure you have a Fortran compiler and a working copy of Matlab or Octave installed.
 
 Then, acquire the source code by cloning the git repository:
 
     git clone git@github.com:polivucci/shpanel.git
 
 Now run `make` to build the `shpanel` executable. 
-The command will automatically check the existence of `Makefile` and use it if it exists.
+The command will automatically check the existence of `Makefile`.
 
 Make sure the main script has execution permissions:
 
