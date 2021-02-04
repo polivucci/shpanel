@@ -1,6 +1,11 @@
-!P. Olivucci 2015
 !Smith-Hess Panel Method
 !Solvers for the algebraic system
+!
+!The subroutines are adapted from the package LINPACK.
+!Please reference:
+!J. J. Dongarra, C. B. Moler, 
+!J. R. Bunch, G.W. Stewart,
+!LINPACK Users' Guide, SIAM, 1979
 !--------------------------------------------------------------------------
 MODULE solver
 !USE coeff
