@@ -13,7 +13,7 @@ The technical details of the Panel Method used by shpanel and validation against
 
 ## Source Download and Compilation
 
-First, make sure you have a copy of Matlab or Octave installed.
+First, make sure you have a Fortran compiler and a copy of Matlab or Octave installed.
 
 Then, acquire the source code by cloning the git repository:
 
