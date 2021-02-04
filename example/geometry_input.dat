@@ -1,0 +1,17 @@
+#The hydrofoil geometry is specified by the control point coordinates 
+#of two BSpline curves, one for the camber distribution and one for
+#the thickness distribution.
+#
+#camber a08mod 							thickness NACA66
+#x_camber 		y_camber				x_thickness 	y_thickness
+0.0				0						0.0				0.0
+0.045			0.350659299353481		0.0				0.199
+0.279			0.989293339347467		0.213			0.464
+0.643			1.043					0.576			0.575
+0.801			0.781601112614644		0.916			0.225
+1.0				0						1.0				0.0
+
+
+
+
+
