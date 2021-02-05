@@ -1,19 +1,19 @@
 
 ## The shpanel code
 
-shpanel is a Fortran based, Boundary Element Method code for solving the vorticity-free Euler equations around a two-dimensional wing section.
+shpanel is a simple Fortran based, Boundary Element Method solver for potential flow around a two-dimensional wing section.
 
 This is the GitHub repository of shpanel source code, including instructions for running and compiling shpanel.
 
 ### External Resources
 
-The technical details of the Panel Method used by shpanel and validation against numerical and experimental data are illustrated in Chapter 3 of:
+The technical details of the numerical method used by shpanel and the code validation against numerical and experimental data are illustrated in Chapter 3 of:
 
 - [P. Olivucci (2016)](https://drive.google.com/file/d/1HxuUuOYdLmRaLohr6xwOQ2BDgNsrewLa/view?usp=sharing), A framework for the design by optimization of hydrofoils under cavitating conditions, Master Thesis, Universita' di Genova.
 
 ## Source Download and Compilation
 
-First, make sure you have a Fortran compiler and a working copy of Matlab or Octave installed.
+First, make sure you have a Fortran 90 compiler and a working copy of Matlab or Octave installed.
 
 Then, acquire the source code by cloning the git repository:
 
